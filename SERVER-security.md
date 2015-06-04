@@ -21,3 +21,23 @@ Server security checklist.
 
 - [ ] Server is configured with appropiate real-time OS/application logging turned on. 
 - [ ] There is a documented process for routine log monitoring and analysis.
+- [ ] Reviews are concluded periodically to ensure the effectiveness of the server logging process. 
+- [ ] There is a schedule for log monitoring of the server. 
+- [ ] Logging has been configured to include at least 2 weeks of relevant OP/application information. 
+  - [ ] All authencation.
+  - [ ] Privilege escalation. 
+  - [ ] User additions and deletions. 
+  - [ ] Access control changes. 
+  - [ ] Job schedule start-up 
+  - [ ] System integrity information 
+  - [ ] Log entries must be time and date stamped
+- [ ] Intentional logging of private information, such as passwords, has been disabled.
+- [ ] Logging is mirrored in real time and stored on another secure server. 
+
+## System integrity controls
+
+- [ ] System is configured to restrict changes to start-up procedures.
+- [ ] There is a documented change control process for system configurations. 
+- [ ] All unused services are disabled. 
+- [ ] If availble, anti-virus software and definitions are current and up-to-date. 
+- [ ] Server has a host firewall installed and enabled. 
