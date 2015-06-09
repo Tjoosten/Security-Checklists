@@ -11,14 +11,14 @@ PHP Security checklist
 - [ ] Server(s) are physically secured.
 
 ## Input
-- [ ] Input form `$_GET`, `$_POST`, `$_COOKIE` and `$_REQUEST` is considerend tainted.
+- [ ] Input form `$_GET`, `$_POST`, `$_COOKIE` and `$_REQUEST` is considered tainted.
 - [ ] Understood that only some values in `$_SERVER` and `$_ENV` are untainted.
 - [ ] `$_SERVER['PHP_SELF']` is used where used.
 - [ ] Input data is validated.
-- [ ] \o (null) is discardedin input.
+- [ ] \o (null) is discarded in input.
 - [ ] Length of input is bounded.
 - [ ] Email addresses are validated.
-- [ ] Application is aware of small, very large, zor and negative numbers. Sci. notation too.
+- [ ] Application is aware of small, very large, or and negative numbers. Sci. notation too.
 - [ ] Application checks for invisible, look-alike, and combining characters.
 - [ ] Unicode control characters stripped out when required.
 - [ ] Output data is sanitized.
@@ -37,15 +37,15 @@ PHP Security checklist
 
 - [ ] Application verifies file type.
   - [ ] User provided mime type value is ignored.
-  - [ ] Application analyzes the content of files to determinie their type.
-  - [ ] It is understood that a perfectly valid file can still contain arbritrary data.
+  - [ ] Application analyzes the content of files to determine their type.
+  - [ ] It is understood that a perfectly valid file can still contain arbitrary data.
 - [ ] Application checks the file size of uploaded files.  
   - [ ] MAX_FILE_SIZE is not depended upon.
-  - [ ] File uploads cannot "overtake" avaible space.
+  - [ ] File uploads cannot "overtake" available space.
 - [ ] Content is checked for malicious content.
   - [ ] Application uses a malware scanner (if req.).
   - [ ] Uploaded HTML files are displayed securely.
-- [ ] Uploaded files are not moved to a web-accessisble directory.
+- [ ] Uploaded files are not moved to a web-accessible directory.
 - [ ] Extensive path checks are used when serving files.
 - [ ] Uploaded files are not served with include().
 - [ ] Uploaded files are served as an attachment using the Content-Disposition header.
@@ -73,7 +73,7 @@ PHP Security checklist
 - [ ] Access to files is not restricted by hiding the files.
 - [ ] Remote files not included with `include()`.
 
-## Authencation
+## Authentication
 
 - [ ] Bad password throttling.
   - [ ] CAPTCHA is used.
@@ -106,7 +106,7 @@ PHP Security checklist
   - [ ] Images.
   - [ ] Pages that take a longer time to load.
   - [ ] CSS files.
-  - [ ] Existence or ordening of frames.
+  - [ ] Existence or ordering of frames.
   - [ ] Existence of a JS variable.
   - [ ] Detected visit of a URL.
 - [ ] Inclusion of your website in an inline frame with JS disabled does not reveal a threat.
@@ -120,16 +120,16 @@ PHP Security checklist
   - [ ] Pages that use 3th-party APIs are throttled.
 - [ ] You did not create your own encryption algorithm.
 - [ ] Arguments to external programs (i.e. `exec()`) are validated.
-- [ ] Generic intrnal and external redirect pages are secured.
+- [ ] Generic internal and external redirect pages are secured.
 - [ ] Precautions taken against the source code of you PHP pages being shown due to misconfiguration.
 - [ ] Configuration and critical files are not in a web-accessible directory.
 
 ## Shared Hosting
 
-- [ ] Using a secure shared host where users connot access the files of other users.
-- [ ] Aware that fellow shared hoting users:
+- [ ] Using a secure shared host where users cannot access the files of other users.
+- [ ] Aware that fellow shared hosting users:
   - [ ] Can, if on the same IP address, issue requests against your site with `XMLHttpRequest` in IE6.
-  - [ ] Can access your website form `127.0.0.1` or `::1`.
+  - [ ] Can access your website from `127.0.0.1` or `::1`.
   - [ ] Can host a server on the same IP address.
   - [ ] Are not "remote" as far as your DB is concerned.
   - [ ] Session & file upload directories are not shared.
