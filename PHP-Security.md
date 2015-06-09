@@ -129,7 +129,7 @@ PHP Security checklist
 - [ ] Using a secure shared host where users cannot access the files of other users.
 - [ ] Aware that fellow shared hosting users:
   - [ ] Can, if on the same IP address, issue requests against your site with `XMLHttpRequest` in IE6.
-  - [ ] Can access your website form `127.0.0.1` or `::1`.
+  - [ ] Can access your website from `127.0.0.1` or `::1`.
   - [ ] Can host a server on the same IP address.
   - [ ] Are not "remote" as far as your DB is concerned.
   - [ ] Session & file upload directories are not shared.
