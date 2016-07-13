@@ -1,4 +1,4 @@
-# Securty risk levels defined 
+# Security risk levels defined 
 
 The following information explains how the criticality level as a general guideline for determining 
 security risk levels. 
