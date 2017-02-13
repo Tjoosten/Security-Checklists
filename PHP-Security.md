@@ -11,7 +11,7 @@ PHP Security checklist
 - [ ] Server(s) are physically secured.
 
 ## Input
-- [ ] Input form `$_GET`, `$_POST`, `$_COOKIE` and `$_REQUEST` is considered tainted.
+- [ ] Input from `$_GET`, `$_POST`, `$_COOKIE` and `$_REQUEST` is considered tainted.
 - [ ] Understood that only some values in `$_SERVER` and `$_ENV` are untainted.
 - [ ] `$_SERVER['PHP_SELF']` is used where used.
 - [ ] Input data is validated.
